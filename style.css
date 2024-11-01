@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4cc9f0;
+}
+
+.container {
+    background-color: #eaf4f4;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh;
+
+    &:hover {
+        border: 2px solid #3a0ca3;
+        box-shadow: 5px 5px #260475;
+    }
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form input,
+button,
+select {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input {
+    border: 1px solid lightblue;
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.select-container img {
+    max-width: 2rem;
+    border-radius: 1rem;
+}
+
+
+.dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.select-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 6rem;
+    border: 1px solid lightblue;
+}
+
+.select-container select{
+    font-size: 1rem;
+    width: auto;
+    cursor: pointer;
+}
+
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+
+form button{
+    height: 3rem;
+    background-color:#3a0ca3;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    &:hover{
+        border: 3px solid rgb(13, 0, 86);
+        
+    }
+}
+
+
+/* Responsive Code */
+/* For mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+        width: 90%;
+        min-height: 50vh;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    form input, form button, select {
+        font-size: 0.9rem;
+        height: 2.5rem;
+    }
+
+    .select-container img {
+        max-width: 1.5rem;
+    }
+}
+
+/* For tablets (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        padding: 1.5rem;
+        width: 80%;
+        min-height: 50vh;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    form input, form button, select {
+        font-size: 1rem;
+        height: 2.75rem;
+    }
+
+    .select-container img {
+        max-width: 1.8rem;
+    }
+}
+
+/* For large screens (over 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        padding: 2rem;
+        width: 40vh;
+        min-height: 45vh;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    form input, form button, select {
+        font-size: 1rem;
+        height: 3rem;
+    }
+
+    .select-container img {
+        max-width: 2rem;
+    }
+}
